@@ -1,0 +1,34 @@
+<p>class-binding works!</p>
+<button (click)="isDanger = !isDanger">
+    Toggle Danger
+</button>
+<br>
+<br>
+<button (click)="isWarning = !isWarning">
+    Toggle Warning
+</button>
+<br>
+<br>
+<div class="box" [class.border-red]="isDanger" [class.bg-yellow]="isWarning">
+    
+</div>
+<br>
+<br>
+<div class="box" [class]="{'border-red': isDanger, 'bg-yellow': isWarning}">
+    
+</div>
+<br>
+<br>
+<div class="box" [class]="classes">
+    
+</div>
+<br>
+<br>
+<div style="border: 1px solid red;width: 100px;height: 100px; background-color: yellow;">
+    
+</div>
+<br>
+<br>
+<div [style.border]="'red 1px solid'"[style.width]="'100px'" [style.height]="'100px'" [style.backgroundColor]="'yellow'">
+    
+</div>
