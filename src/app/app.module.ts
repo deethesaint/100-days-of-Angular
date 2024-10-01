@@ -10,6 +10,8 @@ import { AuthorsDetailComponent } from './authors-detail/authors-detail.componen
 import { AuthorComponent } from './author/author.component';
 import { TwowaysBindingComponent } from './twoways-binding/twoways-binding.component';
 import { FormsModule } from '@angular/forms';
+import { AChildComponent } from './a-child/a-child.component';
+import { AParentComponent } from './a-parent/a-parent.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     AuthorsComponent,
     AuthorsDetailComponent,
     AuthorComponent,
-    TwowaysBindingComponent
+    TwowaysBindingComponent,
+    AChildComponent,
+    AParentComponent
   ],
   imports: [
     BrowserModule,
