@@ -8,6 +8,8 @@ import { InputBindingComponent } from './input-binding/input-binding.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsDetailComponent } from './authors-detail/authors-detail.component';
 import { AuthorComponent } from './author/author.component';
+import { TwowaysBindingComponent } from './twoways-binding/twoways-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { AuthorComponent } from './author/author.component';
     InputBindingComponent,
     AuthorsComponent,
     AuthorsDetailComponent,
-    AuthorComponent
+    AuthorComponent,
+    TwowaysBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

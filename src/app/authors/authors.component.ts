@@ -17,7 +17,7 @@ export class AuthorsComponent {
 
     if (deletedAuthor === this.currentAuthor) {
       if (this.authors.length === 1) {
-        this.currentAuthor = {id: 0, firstName: '', email:'', lastName: '', gender: '', ipAddress: ''};
+        this.currentAuthor = {id: 0, firstName: '', email: '', lastName: '', gender: '', ipAddress: ''};
       } else {
         this.currentAuthor = this.authors[0]
       }

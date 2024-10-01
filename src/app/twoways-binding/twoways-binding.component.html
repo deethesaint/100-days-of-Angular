@@ -1,0 +1,10 @@
+<p> {{ name }} </p>
+<input type="text" [(ngModel)]="name">
+
+<br>
+<p> {{ namex }} </p>
+<input type="text" [ngModel]="namex" (ngModelChange)="namex = $event">
+<br>
+<div class="w-20 h-20 mx-6 border-2 border-black" [class.bg-red-500]="checked" (click)="checkedChange.emit(!checked)">
+
+</div>
