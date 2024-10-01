@@ -1,2 +1,2 @@
 <p>Current selected: {{ currentAuthor.firstName + ' ' + currentAuthor.lastName }}</p>
-<app-author *ngFor="let author of authors" [author]="author" (select)="onSelected($event)"></app-author>
+<app-author *ngFor="let author of authors" [author]="author" (select)="onSelected($event)" (delete)="onDeleted($event)"></app-author>

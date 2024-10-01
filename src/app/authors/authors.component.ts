@@ -12,4 +12,16 @@ export class AuthorsComponent {
   onSelected(selectedAuthor: Author) {
     this.currentAuthor = selectedAuthor;
   }
+  onDeleted(deletedAuthor: Author) {
+    this.authors = this.authors.filter(item => item !== deletedAuthor);
+
+    if (deletedAuthor === this.currentAuthor) {
+      if (this.authors.length === 1) {
+        this.currentAuthor = {id: 0, firstName: '', email:'', lastName: '', gender: '', ipAddress: ''};
+      } else {
+        this.currentAuthor = this.authors[0]
+      }
+      
+    }
+  }
 }

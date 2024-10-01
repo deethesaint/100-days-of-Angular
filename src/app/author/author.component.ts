@@ -9,4 +9,5 @@ import { Author } from '../authors.model';
 export class AuthorComponent {
   @Input() author!: Author;
   @Output() select = new EventEmitter<Author>();
+  @Output() delete = new EventEmitter<Author>();
 }

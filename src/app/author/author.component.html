@@ -1,2 +1,5 @@
-<p> {{ author.firstName }} {{ author.lastName }}</p>
-<button class="p-2 rounded-lg bg-amber-300" (click)="select.emit(author)">Select</button>
+<div class="flex flex-row flex-wrap">
+    <p> {{ author.firstName }} {{ author.lastName }}</p>
+    <button class="p-2 rounded-lg bg-amber-300" (click)="select.emit(author)">Select</button>
+    <button class="p-2 rounded-lg bg-amber-300" (click)="delete.emit(author)">Delete</button>
+</div>
