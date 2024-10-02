@@ -1,0 +1,13 @@
+<div *ngFor="let child of childs" class="bg-amber h-12 w-96 m-6 text-lg font-bold p-3">
+    <ng-container *ngIf="ngTemplate; else NoTemplate">
+        <ng-container *ngTemplateOutlet="ngTemplate; context: {$implicit: child}">
+        </ng-container>
+        <!-- not implitcit one -->
+        <!-- <ng-container *ngTemplateOutlet="ngTemplate; context: {child: child}">
+        </ng-container> -->
+    </ng-container>
+    <ng-template #NoTemplate>
+        {{ child }}
+    </ng-template>
+</div>
+

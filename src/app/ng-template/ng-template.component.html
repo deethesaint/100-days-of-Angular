@@ -1,0 +1,28 @@
+
+
+<div>
+    <p>You have <ng-container [ngTemplateOutlet]="ngNotification"></ng-container> </p>
+    <p>You have <ng-container [ngTemplateOutlet]="ngNotification"></ng-container> </p>
+    <p>You have <ng-container [ngTemplateOutlet]="ngNotification"></ng-container> </p>
+    <p>You have <ng-container [ngTemplateOutlet]="ngNotification"></ng-container> </p>
+    <p>You have <ng-container [ngTemplateOutlet]="ngNotification"></ng-container> </p>
+    <p>You have <ng-container [ngTemplateOutlet]="ngNotification"></ng-container> </p>
+</div>
+
+
+
+<app-ng-template-child [childs]="childs" [ngTemplate]="ngTemplate"></app-ng-template-child>
+
+<!-- // this wont be rendered (not implicit) -->
+<!-- <ng-template #ngTemplate let-c="child">
+    <p class="text-red-500 text-lg font-bold">{{ c }}</p>
+</ng-template> -->
+<!-- // this will (implicit) -->
+<ng-template #ngTemplate let-c>
+    <p class="text-red-500 text-lg font-bold">{{ c }}</p>
+</ng-template>
+
+
+<ng-template #ngNotification>
+<span class="bg-red-500 px-2 rounded-full font-semibold text-white text-lg text-center"> {{ counter }} </span> messages
+</ng-template>

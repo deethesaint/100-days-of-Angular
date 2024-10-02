@@ -14,6 +14,8 @@ import { AChildComponent } from './a-child/a-child.component';
 import { AParentComponent } from './a-parent/a-parent.component';
 import { NgCPParentComponent } from './ng-cpparent/ng-cpparent.component';
 import { NgCPChildComponent } from './ng-cpchild/ng-cpchild.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { NgTemplateChildComponent } from './ng-template-child/ng-template-child.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { NgCPChildComponent } from './ng-cpchild/ng-cpchild.component';
     AChildComponent,
     AParentComponent,
     NgCPParentComponent,
-    NgCPChildComponent
+    NgCPChildComponent,
+    NgTemplateComponent,
+    NgTemplateChildComponent
   ],
   imports: [
     BrowserModule,
