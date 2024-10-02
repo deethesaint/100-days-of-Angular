@@ -16,6 +16,8 @@ import { NgCPParentComponent } from './ng-cpparent/ng-cpparent.component';
 import { NgCPChildComponent } from './ng-cpchild/ng-cpchild.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgTemplateChildComponent } from './ng-template-child/ng-template-child.component';
+import { DiTabGroupComponent } from './di-tab-group/di-tab-group.component';
+import { DiTabComponent } from './di-tab/di-tab.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { NgTemplateChildComponent } from './ng-template-child/ng-template-child.
     NgCPParentComponent,
     NgCPChildComponent,
     NgTemplateComponent,
-    NgTemplateChildComponent
+    NgTemplateChildComponent,
+    DiTabGroupComponent,
+    DiTabComponent
   ],
   imports: [
     BrowserModule,

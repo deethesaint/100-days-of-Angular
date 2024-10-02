@@ -5,5 +5,12 @@
 <ng-container>
   <app-twoways-binding [(checked)]="isChecked" (checkedChange)="isChecked = !isChecked"></app-twoways-binding>
 </ng-container> -->
+<!-- 
+<app-ng-template></app-ng-template> -->
 
-<app-ng-template></app-ng-template>
+<app-di-tab-group [(activeIndex)]="activeIndex">
+  <app-di-tab title="Tab 1">Tab 1 Content</app-di-tab>
+  <app-di-tab title="Tab 2">Tab 2 Content</app-di-tab>
+  <app-di-tab title="Tab 3">Tab 3 Content</app-di-tab>
+  <app-di-tab title="Tab 4">Tab 4 Content</app-di-tab>
+</app-di-tab-group>
