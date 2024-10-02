@@ -12,6 +12,8 @@ import { TwowaysBindingComponent } from './twoways-binding/twoways-binding.compo
 import { FormsModule } from '@angular/forms';
 import { AChildComponent } from './a-child/a-child.component';
 import { AParentComponent } from './a-parent/a-parent.component';
+import { NgCPParentComponent } from './ng-cpparent/ng-cpparent.component';
+import { NgCPChildComponent } from './ng-cpchild/ng-cpchild.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AParentComponent } from './a-parent/a-parent.component';
     AuthorComponent,
     TwowaysBindingComponent,
     AChildComponent,
-    AParentComponent
+    AParentComponent,
+    NgCPParentComponent,
+    NgCPChildComponent
   ],
   imports: [
     BrowserModule,
