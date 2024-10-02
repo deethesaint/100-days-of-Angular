@@ -1,7 +1,7 @@
-<div class="tab-header">
-    <div *ngFor="let tab of tabPanelList; let idx = index" >
-        <p (click)="handle(idx)"> {{ tab.title }} </p>
-        <button (click)="removeTab(tab)">X</button>
+<div class="tab-header flex flex-row flex-wrap gap-0 border-b" >
+    <div *ngFor="let tab of tabPanelList; let idx = index" class="tab-item border flex flex-row flex-wrap justify-items-stretch" (click)="handle(idx)" [class.active]="idx === activeIndex">
+        <p class="me-6"> {{ tab.title }} </p>
+        <span class="text-end"><button class="rounded-xl mx-1 border bg-gray-400 px-3 flex-1 hover:bg-red-300" (click)="removeTab(tab); $event.stopPropagation()">X</button></span>
     </div>
 </div>
 <div class="tab-body" *ngIf="tabPanelList.length; else NoTabs">

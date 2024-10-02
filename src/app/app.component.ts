@@ -9,4 +9,5 @@ export class AppComponent {
   title = '101days';
   isChecked = false;
   activeIndex = 0;
+  anotherIndex = 0;
 }

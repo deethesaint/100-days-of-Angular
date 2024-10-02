@@ -18,6 +18,7 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgTemplateChildComponent } from './ng-template-child/ng-template-child.component';
 import { DiTabGroupComponent } from './di-tab-group/di-tab-group.component';
 import { DiTabComponent } from './di-tab/di-tab.component';
+import { DiTabGroupBootstrapComponent } from './di-tab-group-bootstrap/di-tab-group-bootstrap.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DiTabComponent } from './di-tab/di-tab.component';
     NgTemplateComponent,
     NgTemplateChildComponent,
     DiTabGroupComponent,
-    DiTabComponent
+    DiTabComponent,
+    DiTabGroupBootstrapComponent
   ],
   imports: [
     BrowserModule,
